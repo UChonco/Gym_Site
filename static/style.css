@@ -1,26 +1,39 @@
-body{
+*{
+    margin: 0%;
+}
+nav{
+    display:inline-flex;    
     background-color: black;
+    justify-content: space-around ;
+    width: 100%;
+   
+}
+
+.navbar ul{
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 50px;
+    padding: 1rem;
+    width: 100%;
+    list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: white ;
+    padding: 1rem;
+    font-size: x-large;
+    border-radius: 50%;
+}
+.navbar a:hover{
+    background-color: rgb(227, 227, 0);
+    border-radius: 0%;
+    transition: .8s;
 
 }
-
-h1{
-    color: white;
-
-}
-
-span{
-    color: yellow;
-
-}
-div{
-    height: 10rem;
-    width: 20rem;
-    border: 2px solid yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar a.active{
+    border-radius: 0%;
+    border-bottom: 4px solid yellow;
+   
 }

@@ -1,11 +1,29 @@
-*{
+body{
     margin: 0%;
 }
+
+.logo{
+    cursor: pointer;
+}
+#home{
+    background-image:url(/static/image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+#about {
+    background-color: black ;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+
 nav{
-    display:inline-flex;    
-    background-color: black;
+    display:flex;    
+    background-color: transparent;
     justify-content: space-around ;
     width: 100%;
+    
    
 }
 
@@ -25,6 +43,7 @@ nav{
     padding: 1rem;
     font-size: x-large;
     border-radius: 50%;
+    cursor: pointer;
 }
 .navbar a:hover{
     background-color: rgb(227, 227, 0);
@@ -36,4 +55,116 @@ nav{
     border-radius: 0%;
     border-bottom: 4px solid yellow;
    
+}
+
+.quote{
+    color: white;
+    height: 20%;
+    width: 25%;
+    padding: 2rem;
+    margin: 4% 0 0 6%   ;
+    text-align: center;
+}
+.quote button{
+    background-color: yellow;
+    border: none;
+    padding: 20px 50px 20px 50px;
+    color: white;
+    font-size: larger;
+    font-weight: 500px  ;
+    border-radius: 5px;
+   
+}
+.quote button:hover{
+    cursor: pointer;
+    letter-spacing:5px;
+    transition: .5s;
+    
+}
+.hidebox{
+    display: none;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+ 
+}
+.background{
+    display: none;
+    background-color: rgba(128, 128, 128, 0.405);
+    position: fixed;
+    height: 80vb;
+    transition: .8s;
+    width: 100%;
+}
+.form-content{
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.90);
+    width: 25rem;
+    height:  28rem;
+    transition: .10s;
+    box-shadow: 2px 2px 2px   black;
+    border: 4px solid rgba(255, 255, 0, 0.863);
+    position: relative;
+    cursor: pointer;
+}
+.form-content h2{
+    color: white;
+}
+.form-content h2 span{
+    color: yellow;
+}
+
+.row{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.column{
+    flex: 1;
+
+}
+.column label{
+    text-align: left;
+}
+.column input{
+    width: 11rem;
+    height: 2rem;
+}
+
+textarea{
+  
+    width: 23.5rem;
+    height: 10rem;
+    resize: none;
+}
+#formpop button{
+    width: 24rem;
+    height: 4rem;
+    border-radius: 2px;
+    background-color: yellow;
+    color: white;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+
+}
+
+#formpop button:hover{
+    background-color: rgb(208, 208, 0);
+}
+.close{
+    color: white;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: 2px solid yellow;
+    padding: 10px 20px 10px 20px ;
+    cursor: pointer;
+}
+.close:hover{
+    border: 2px solid rgb(191, 191, 0);
 }

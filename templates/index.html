@@ -7,20 +7,77 @@
     <link rel="stylesheet" href="{{url_for('static', filename ='style.css')}}">
 </head>
 <body>
-    
+<section id="home">
     <nav>
         <div class="logo">
             <img src="{{url_for('static',filename ='image/FIT2.png')}}" alt="no image" srcset="">
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="{{url_for('home')}}" class="{{ 'active' if request.endpoint == 'home' else '' }}">Home</a></li>
-                <li><a href="{{url_for('about')}} "class="{{ 'active' if request.endpoint == 'about' else '' }}">About</a></li>
-                <li><a href="{{url_for('contact')}}"class="{{ 'active' if request.endpoint == 'contact' else '' }}">Contact</a></li>
-                <li><a href="{{url_for('membership')}}"class="{{ 'active' if request.endpoint == 'membership' else '' }}">Membership</a></li>
-            </ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about"class="nav-link">About</a></li>
+                <li><a href=""class=nav-link">Contact</a></li>
+                <li><a href=""class=nav-link">Membership</a></li>
+            </ul>   
         </div>
     </nav>
+    <div id="popbackground" class="background">
+    <div id= popform class="hidebox">
+        <div class="form-content">
+            <span id="closepop" class="close">&times;</span>
+            <br>    
+            <h2>
+                WHERE EVERYBODY FITS IN
+                <span>JOIN TODAY!</span>
+                </h2>
+            <form action="" id="formpop">
+            <div class="row">
+                 <div class="column">
+                <input type="text" name="" id="name" placeholder="First Name "><br>   
+                </div>
+                <div class="column">
+                <input type="text" name="" id="surname" placeholder="Surname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                <input type="phone" name="" id="phone" placeholder="Contact Number">
+                </div>
+                <div class="column">
+
+                <input type="email" name="" id="email" placeholder="Email">
+                </div>
+            </div>
+          
+                <textarea name="" id="" placeholder="Message"></textarea><br><br>   
+                <button>Submit</button>
+       
+            </form>
+        </div>
+    </div>
+</div>  
   
+    <div class="quote">
+        <h1>Fitness is not about being better than someone else It’s about being better than you used to be</h1>
+        <button id="openform">Join US!</button>
+    </div>
+</section>   
+<section id="about">
+    <h2>Hello World</h2>
+    <nav>
+        <div class="logo">
+            <img src="{{url_for('static',filename ='image/FIT2.png')}}" alt="no image" srcset="">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="" class="nav-link">Home</a></li>
+                <li><a href="#about"class="nav-link">About</a></li>
+                <li><a href=""class=nav-link">Contact</a></li>
+                <li><a href=""class=nav-link">Membership</a></li>
+            </ul>   
+        </div>
+    </nav>
+</section>
+ <script src="{{url_for('static', filename='index.js')}}"></script>
 </body>
-</html>
+</html> 

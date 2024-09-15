@@ -1,5 +1,12 @@
 body{
-    margin: 0%;
+    margin: 0;
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+ 
+
 }
 
 .logo{
@@ -11,20 +18,38 @@ body{
     background-size: cover ;
 }
 #about {
+    background-color: rgba(245, 245, 245, 0.84) ;
+}
+#contact {
     background-color: black ;
 }
-section{
-    height: 100vh;
-    width: 100%;
+#membership {
+    background-color: black ;
 }
+#transitionone {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(249, 249, 1);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#transitionone span{
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px black;
+}
+#transitionone #t1{
+    font-size: 2rem;
+}
+
 
 nav{
     display:flex;    
+    position: fixed;
     background-color: transparent;
     justify-content: space-around ;
     width: 100%;
-    
-   
 }
 
 .navbar ul{
@@ -56,14 +81,26 @@ nav{
     border-bottom: 4px solid yellow;
    
 }
-
 .quote{
     color: white;
-    height: 20%;
-    width: 25%;
-    padding: 2rem;
-    margin: 4% 0 0 6%   ;
-    text-align: center;
+    padding: 1rem;
+    height: 20rem;
+    width: 40rem;
+    margin-top: 12rem; 
+    margin-left: 12.7rem;
+}
+
+.quote span{
+    text-shadow: 2px 2px 2px black;
+}
+.quote .one{
+  font-size: 2.2rem;
+}
+.quote .two{
+  font-size: 3.6rem;
+}
+.quote .three{
+  font-size: 1.2rem;
 }
 .quote button{
     background-color: yellow;
@@ -73,6 +110,7 @@ nav{
     font-size: larger;
     font-weight: 500px  ;
     border-radius: 5px;
+
    
 }
 .quote button:hover{
@@ -84,7 +122,7 @@ nav{
 .hidebox{
     display: none;
     width: 100%;
-    height: 80%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -94,7 +132,7 @@ nav{
     display: none;
     background-color: rgba(128, 128, 128, 0.405);
     position: fixed;
-    height: 80vb;
+    height: 100vh   ;
     transition: .8s;
     width: 100%;
 }

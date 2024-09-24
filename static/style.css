@@ -18,7 +18,17 @@ section{
     background-size: cover ;
 }
 #about {
-    background-color: rgba(245, 245, 245, 0.84) ;
+    background-image:url(/static/image/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.aboutcontent{
+    background-color: aliceblue;
+    height: 20rem;
+    width: 30rem;
+    margin-top:35vh;
+    margin-left: 15%;
+
 }
 #contact {
     background-color: black ;
